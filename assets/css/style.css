@@ -1,0 +1,48 @@
+
+
+
+header{
+    border-bottom: 3px solid #59238c;
+}
+
+.navbar{
+    background-color: #fafafa;
+    
+}
+.nav-link{
+    color: #59238c;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    color: #e9a157;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: #59238c;
+    font-weight: 500;
+    font-size: 1.1rem;
+   
+}
+
+.navbar-nav .nav-link.active:hover{
+    color: #e9a157;
+    
+}
+
+/* css redes sociais header */
+.social-part .fa{
+    padding-right: 20px;
+    font-size: 1.3rem;
+   color: #59238c;
+}
+.social-part .fa:hover{
+   color: #e9a157;
+}
+ul li a{
+    margin-right: 20px;
+}
+
+/* banner pagina principal */
