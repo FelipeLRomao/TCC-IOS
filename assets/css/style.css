@@ -2,7 +2,7 @@
 
 
 header{
-    border-bottom: 3px solid #59238c;
+    border-bottom: 5px solid #59238c;
 }
 
 .navbar{
@@ -16,7 +16,7 @@ header{
 }
 
 .nav-link:hover{
-    color: #e9a157;
+    color: #ff7600;
 }
 
 
@@ -28,7 +28,7 @@ header{
 }
 
 .navbar-nav .nav-link.active:hover{
-    color: #e9a157;
+    color: #ff7600;
     
 }
 
@@ -39,10 +39,251 @@ header{
    color: #59238c;
 }
 .social-part .fa:hover{
-   color: #e9a157;
+   color: #ff7600;
 }
 ul li a{
     margin-right: 20px;
 }
 
-/* banner pagina principal */
+body{
+    background-color: #363636;
+}
+
+.btn-primary{
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 1.1rem;
+    background-color: #59238c;
+    border: none;
+}
+.btn-primary:hover{
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 1.1rem;
+    background-color: #2bd834;
+    border: none;
+}
+/* Carrosel de Imagens */
+.carousel{
+    border-bottom: 5px solid #ff7600;
+}
+
+
+
+/* Estilização Conteúdo Home */
+
+#conteiner-content{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.text-principal{
+    color: #fff;
+    text-align: justify;
+    margin-left: -90px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.title-home {
+  font-size: 4rem;
+  text-align: start;
+}
+.text-integra{
+    font-weight: 600;
+    font-size: 5rem;
+    color: #8437cc;
+}
+
+.text-integra span{
+    font-weight: 600;
+    font-size: 5rem;
+    color: #ff7600;
+}
+
+.title-secondary{
+    font-size: 2.5rem;
+}
+
+.title-secondary span{
+    color: #2bd834;
+}
+
+#btn-home{
+    font-size: 1.1rem;
+    width: 8rem;
+    height: 3rem;
+}
+
+/* Primeira Imagem Home conteúdo */
+
+
+.img-home1{
+   padding-top: 8rem;
+}
+
+/* Segundo Conteúdo */
+.segundo-conteudo{
+    background-color: #f8f8f8;
+    color: #000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.text-principal2{
+    color: #353535;
+    text-align: justify;
+    margin-left: 90px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 100%;
+    padding-right: 70px;
+}
+
+.img-home2{
+    margin-left: -9rem;
+}
+
+.heading{
+    font-size: 4rem;
+    font-weight: 600;
+  text-align: start;
+  color: #8437cc;
+}
+
+.title-secondary2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #ff7600;
+    
+}
+
+
+.img-home3{
+    width: 30vw;
+}
+
+/* Responsividade */
+
+/* Responsividade Slider */
+@media screen and (max-width:368px){   
+    .carousel{
+        width: 100vw;
+    }
+}
+
+/* Resposividade conteúdo Home */
+/* @media screen and (max-width:368px){
+    .text-principal{
+      margin: 0;
+      text-align: justify;
+      padding-left: 3rem ;
+      font-size: 1.5rem;
+      width: 135vw;
+    }
+    .title-secondary{
+        font-size: 2.5rem;
+        text-align: start;
+    }
+    
+    .title-secondary span{
+        color: #2bd834;
+    }
+    #btn-home{
+    font-size: 1.5rem;
+    width: 230px;
+    }
+} */
+
+/* Estilos específicos para dispositivos menores */
+
+@media (max-width: 768px) {
+    .title-home {
+      font-size: 24px;
+    }
+  
+    .text-integra {
+      font-size: 36px;
+    }
+  
+    .title-secondary {
+      font-size: 20px;
+    }
+  
+    .text-principal p {
+      font-size: 16px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  
+    .img-home1,
+    .img-home2,
+    .img-home3 {
+      max-width: 300px;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .title-secondary2 {
+      font-size: 20px;
+    }
+  
+    .text-principal2 p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos específicos para dispositivos menores, como celulares */
+  
+  @media (max-width: 576px) {
+    .title-home {
+      font-size: 20px;
+    }
+  
+    .text-integra {
+      font-size: 28px;
+    }
+  
+    .title-secondary {
+      font-size: 18px;
+    }
+  
+    .text-principal p {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .img-home1,
+    .img-home2,
+    .img-home3 {
+      max-width: 250px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .title-secondary2 {
+      font-size: 18px;
+    }
+  
+    .text-principal2 p {
+      font-size: 14px;
+    }
+  }
