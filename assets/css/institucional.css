@@ -1,0 +1,187 @@
+
+/* Estilização Página Institucional */
+
+#about-area2{
+ margin-top: 50px;
+ overflow-x: hidden;
+} 
+
+
+.text-sobre{
+    color: #f9f9f9;
+    font-size: 1.1rem;
+   text-align: justify;
+}
+.main-title2{
+    color: #f9f9f9;
+    margin: 0 0 65px 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-title2::after{
+    content: '';
+    border-top:2px solid #ff7600;
+    width: 15%;
+    position: absolute;
+    top: 230px;
+    left: 42.5%;
+}
+
+.about-title{
+    font-size: 1.6rem;
+    color:  #2bd834;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.img-institucional-container{
+    padding-right: 5rem;
+    align-self: center;
+}
+.img-institucional{
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px #8437cc;
+    
+}
+
+.institucional-content{
+    align-self: center;
+    
+}
+
+
+.segundo-bloco{
+    margin-top: 6rem;
+}
+
+#about-area3{
+    margin-top: 5px;
+    border-bottom: 5px solid #ff7600;
+    
+}
+
+.about-title3{
+    font-size: 1.6rem;
+    color:  #2bd834;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 0.5rem;
+    
+}
+
+.img-institucional3{
+    
+    border-radius: 15px;
+    box-shadow: 4px 4px 25px #8437cc;
+    
+    
+}
+
+.img-institucional-container3{
+    padding-right: 14rem;
+    padding-bottom: 5rem;
+    
+}
+
+#about-area3 p{
+    padding-left: -40px;
+   padding-right: 4rem;
+   margin-bottom: 50px;
+  
+}
+
+.container2{
+    align-self: center;
+    margin-left: 18rem;
+}
+/* Seção de Apoio */
+.section-apoio{
+    padding-top: 3rem;
+    background-color: #f9f9f9;
+}
+.apoio-content{
+    width: 100vw;
+}
+.apoio-content h3{
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #59238c;
+}
+ 
+.apoio-content-p{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 460px){
+     .main-title2{
+        font-size: 1.7rem;
+
+     }
+     .main-title2::after{
+        content: '';
+        border-top:2px solid #ff7600;
+        width: 35%;
+        position: absolute;
+        top: 230px;
+        left: 35%;
+    }
+
+    .about-title{
+     margin-top: 3rem;
+     font-size: 1.4rem;
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+    #about-area2 p{
+        padding: 20px;
+        
+    }
+
+    .img-institucional-container{
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    .about-title3{
+        padding-top: -5px;
+        font-size: 1.5rem;
+        color:  #2bd834;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+    }
+    .img-institucional3{    
+        border-radius: 15px;
+        box-shadow: 4px 4px 25px #8437cc;
+        
+    }
+    
+    .img-institucional-container3{
+        max-width: 230vw;
+       padding: 14px;
+       margin-top: -2rem;
+       margin-right: 12px;
+    }
+
+    .container2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+/* Seção de Apoio */
+.apoio-content h1{
+    padding-left: 2rem;
+    padding-right: 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #59238c;
+}
+}

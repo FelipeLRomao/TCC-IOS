@@ -10,7 +10,12 @@
     <title>Integratec</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/slide.css">
-    
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+    </script>
 </head>
 <body>
     <!-- Cabecalho Página -->
@@ -27,19 +32,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Institucional</a>
+          <a class="nav-link" href="institucional.html">Institucional</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Profissionais</a>
+            <a class="nav-link" href="profissionais.html">Profissionais</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" href="projetos.html">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="contato.html">Contato</a>
           </li>
       </ul>
     </div>
@@ -57,48 +62,50 @@
     <main>
          <!-- Slide do Site -->
 
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner" id="slide">
-        <div class="carousel-item active" id="slide1">
-          <img src="./assets/img/slide1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="title-banner">Profissionais Qualificados</h5>
-            <p class="text-banner">Nossos profissionais tem formação técnica e vivência prática</p>
-            <button class="btn btn-primary">Saiba Mais</button>
+         <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-    
-        <div class="carousel-item">
-          <img src="./assets/img/slide2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="title-banner">Venha para o Digital</h5>
-            <p class="text-banner">Traga sua empresa ou seu negócio para o mundo da técnologia.</p>
-            <button class="btn btn-primary">Saiba Mais</button>
+          <div class="carousel-inner" id="slide">
+            <div class="carousel-item active" id="slide1">
+              <img src="./assets/img/slide1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="title-banner">Profissionais Qualificados</h5>
+                <p class="text-banner">Nossos profissionais têm formação técnica e vivência prática</p>
+                <button class="btn btn-primary">Saiba Mais</button>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="./assets/img/slide2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="title-banner">Venha para o Digital</h5>
+                <p class="text-banner">Traga sua empresa ou seu negócio para o mundo da tecnologia.</p>
+                <button class="btn btn-primary">Saiba Mais</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slide3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="title-banner">Conquiste mais clientes</h5>
+                <p class="text-banner">Ter um site é como ter uma loja 24 horas</p>
+                <button class="btn btn-primary">Saiba Mais</button>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-item">
-          <img src="./assets/img/slide3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="title-banner">Conquiste mais clientes</h5>
-            <p class="text-banner">Ter um site é como ter uma loja 24horas</p>
-            <button class="btn btn-primary">Saiba Mais</button>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      
+        
     <!-- Conteúdo pós Banner-->
     <div class="container text-center" id="conteiner-content">
       <div class="row">
@@ -142,7 +149,7 @@
          <div class="col-xs-12 col-md-4">
           <img class="img-home2" src="./assets/img/home-img.png" alt="">
         </div>
-        <!-- Primeiro Conteúdo Texto -->
+        <!-- Sobre Nos-->
         <div class="col-xs-12 col-md-8">
         <div class="text-principal2">    
           <h2 class="heading">Sobre <span>Nós</span></h2>
@@ -156,7 +163,7 @@
               equipando-os com as habilidades mais modernas e atualizadas. Ao optar por trabalhar conosco, você terá a garantia de contar com profissionais 
               preparados para enfrentar os desafios do mundo digital.
           </p>
-        <button class="btn btn-primary" id="btn-home">Saiba Mais</button>
+        <button class="btn btn-primary" id="btn-home2">Saiba Mais</button>
         </div>
         </div>
        
@@ -166,7 +173,7 @@
     <div class="container text-center" id="conteiner-content">
       <div class="row">
         
-        <!-- Primeiro Conteúdo Texto -->
+        <!-- Integratec -->
         <div class="col-xs-12 col-md-8">
         <div class="text-principal">    
            <h2 class="text-integra">Integra<span>Tec</span></h2>        
@@ -193,11 +200,174 @@
         </div>
       </div>      
     </div>
-    <section>
+    
+    <!-- Conteudo antes do Formulario/Cards -->
+
+    <section class="segundo-conteudo">
+   <div class="container text-center" id="conteiner-content">
+     <div class="row">
+        <!-- Imagem Home -->
+        
+       <!-- Sobre Nos-->
+       <div class="container ">
+        <div class="row mvv-row mvv-container">
+          <div class="col-md-4 mvv">
+            <div class="circle-image">
+              <img src="./assets/img/missao.png" alt="Imagem 1">
+            </div>
+            <h5 class="title-mvv">Missão</h5>
+            <p>Capacitar e integrar futuros programadores através de projetos reais para impulsionar suas carreiras.</p>
+            <a href="institucional.html" class="btn-mvv btn-primary">Ver Detalhes</a>
+          </div>
+          <div class="col-md-4 mvv">
+            <div class="circle-image">
+              <img src="./assets/img/visão.png" alt="Imagem 2">
+            </div>
+            <h5 class="title-mvv">Visão</h5>
+            <p>Oportunidades que transformam vidas, a primeira oportunidade de um projeto é a maneira de transforma uma carreira e o futuro de um profissional de tecnologia.</p>
+            <a href="institucional.html" class="btn-mvv btn-primary">Ver Detalhes</a>
+          </div>
+          <div class="col-md-4 mvv">
+            <div class="circle-image">
+              <img src="./assets/img/valores.png" alt="Imagem 3">
+            </div>
+            <h5 class="title-mvv">Valores</h5>
+            <p>Fazer além da oportunidade de um projeto para quem está iniciando, mas também a transformação digital de pequenos e grandes negócios que poderam ter seu website para alavancar seu negócio.</p>
+            <a href="institucional.html" class="btn-primary btn-mvv">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
       
-    </section>
+     </div>      
+   </div>
+   </section>
+
+    <!-- Formulário página Index -->
+    <!-- formulario contato -->
+<section id="body-form">
+  <div class="col-md-4 form-img" id="img-contato">
+   <img src="./assets/img/ilus.png" alt="">
+  </div>
+  <div class="col-md-8  container-form">
+      <div class="form">
+          <form action="#">
+              <div class="form-header">
+                  <div class="title">
+                      <h1>Solicitar Projeto</h1>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <label for="firstname">Primeiro Nome</label>
+                      <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required>
+                  </div>
+  
+                  <div class="input-box">
+                      <label for="lastname">Sobrenome</label>
+                      <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
+                  </div>
+  
+                  <div class="input-box">
+                      <label for="email">Seu melhor e-mail</label>
+                      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                  </div>
+  
+                  <div class=" input-box">
+                      <label for="number">Celular</label>
+                      <input type="tel" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                  </div>
+                     <div class="col-12 input-box">
+                      <label for="projectType">Tipo de Projeto:</label>
+                      <select class="form-control" id="projectType" name="projectType">
+                        <option value="website">Site Institucional</option>
+                        <option value="webapp">Landing Page</option>
+                        <option value="webdesign">Loja Virtual</option>
+                        <option value="ecommerce">Manutenção de Micros</option>
+                        <option value="ecommerce">Suporte a usuários</option>
+                        <option value="ecommerce">Instalações e Configurações</option>
+                      </select>
+                     </div>
+                  
+                   
+                    
+  
+                  <div class="input-box">
+                      <label for="password">Senha</label>
+                      <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                  </div>
+  
+                  <div class="input-box">
+                      <label for="confirmpassword">Confirme sua senha</label>
+                      <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Digite sua senha" required>
+                  </div>
+              </div>
+  
+              <div class="gender-inputs">
+                  <div class="gender-title">
+                      <h6>Qual Profissional Necessita</h6>
+                  </div>
+  
+                  <div class="gender-group">
+                      <div class="gender-input">
+                          <input type="radio" name="gender" id="female">
+                          <label for="female">Programador Web</label>
+                      </div>
+  
+                      <div class="gender-input">
+                          <input type="radio" name="gender" id="male">
+                          <label for="male">Suporte em T.I</label>
+                      </div>
+  
+                      <div class="gender-input">
+                          <input type="radio" name="gender" id="others">
+                          <label for="others">Ambos Profissionais</label>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="continue-button">
+                  <button><a href="#">Solicitar</a></button>
+              </div>
+          </form>
+      </div>
+  </div>
+  </section>
     </main>
     <footer></footer>
-    <script src="./assets/js/slide.js"></script>
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+      $(document).ready(function(){
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("carousel-item");
+    
+    function showSlide() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      
+      setTimeout(showSlide, 5000);
+    }
+    
+    showSlide();
+  });
+
+
+  
+    </script>
+
+   
 </body>
 </html>
