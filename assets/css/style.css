@@ -410,13 +410,21 @@ background-color: #2bd834;
   
   /* Estilos específicos para dispositivos menores */
   
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1100px) {
+    .mvv-row {
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+  }
+
     .title-home {
       font-size: 24px;
     }
   
     .text-integra {
       font-size: 36px;
+      margin-left: 5rem;
     }
   
     .d-md-block{
@@ -427,12 +435,22 @@ background-color: #2bd834;
 
     .title-secondary {
       font-size: 20px;
+      margin-left: 5rem;
     }
-  
+    .segundo-conteudo {
+      background-color: #f8f8f8;
+      color: #000;
+      
+  }
     .text-principal p {
       font-size: 16px;
+      margin-left: 5rem;
     }
-  
+   
+    #btn-home{
+      margin-left: 5rem;
+    }
+
     .btn {
       font-size: 16px;
     }
@@ -450,7 +468,9 @@ background-color: #2bd834;
     .title-secondary2 {
       font-size: 20px;
     }
-  
+     .img-home2{
+      margin-left: 0;
+     }
     .text-principal2 p {
       font-size: 16px;
     }
@@ -501,8 +521,118 @@ background-color: #2bd834;
   }
   
   /* Estilos específicos para dispositivos menores, como celulares em orientação paisagem */
+
+  /* CSS para telas de 1300px */
+@media (min-width: 1300px) {
+  /* Estilos para o header */
+ 
   
-  @media screen and (max-width: 460px) {
+  
+  .logo {
+    height: 80px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .social-part {
+    font-size: 24px;
+  }
+  
+  /* Estilos para o slide */
+  #slide .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .title-banner {
+    font-size: 36px;
+  }
+  
+  .text-banner {
+    font-size: 24px;
+  }
+  
+  /* Estilos para o conteúdo pós banner */
+  #conteiner-content {
+    padding: 50px 0;
+  }
+  
+  .text-principal {
+    margin-bottom: 40px;
+  }
+  
+  .img-home1 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .title-secondary2 {
+    font-size: 28px;
+  }
+  
+  .img-home2 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-principal2 {
+    margin-bottom: 40px;
+  }
+  
+  .img-home3 {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* CSS para telas de 1600px */
+@media (min-width: 1600px) {
+  /* Estilos para o header */
+  
+  
+  .logo {
+    height: 100px;
+  }
+  
+  /* Estilos para o slide */
+  #slide .carousel-item {
+    height: 600px;
+  }
+  
+  .title-banner {
+    font-size: 48px;
+  }
+  
+  .text-banner {
+    font-size: 30px;
+  }
+  
+  /* Estilos para o conteúdo pós banner */
+  #conteiner-content {
+    padding: 70px 0;
+  }
+  
+  .heading {
+    font-size: 48px;
+  }
+  
+  .title-secondary2 {
+    font-size: 36px;
+  }
+}
+  
+ /* Responsividade para telas pequenas abaixo  */
+@media screen and (max-width: 460px) {
 
 .d-block{
     display: none!important;

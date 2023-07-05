@@ -117,6 +117,16 @@
 
 
 /* Responsividade */
+@media screen and (max-width: 1100px) {
+    .img-institucional-container3 {
+        padding-right: 10px;
+        /* margin-right: 5px; */
+        /* padding-left: 10px; */
+        /* padding-bottom: 5rem; */
+    }
+}
+
+
 @media screen and (max-width: 460px){
      .main-title2{
         font-size: 1.7rem;
