@@ -1,4 +1,14 @@
-
+:root{
+    --azul-principal: #00a9d4;
+    --azul-alternativo: #2b818c;
+    --magenta-principal: #c60052;
+    --magenta-alternativo: #ed2860;
+    --laranja-escuro: #ff4000;
+    --laranja-claro:#e87624;
+    --aamarelo-principal: #ffc803;
+    --verde--principal: #a7cd2c;
+  
+  }
 /* Estilização Página Institucional */
 
 #about-area2{
@@ -13,24 +23,15 @@
    text-align: justify;
 }
 .main-title2{
-    color: #f9f9f9;
+    color: var(--laranja-escuro);
     margin: 0 0 65px 0;
     font-size: 3rem;
     text-align: center;
 }
 
-.main-title2::after{
-    content: '';
-    border-top:2px solid #ff7600;
-    width: 15%;
-    position: absolute;
-    top: 230px;
-    left: 42.5%;
-}
-
 .about-title{
     font-size: 1.6rem;
-    color:  #2bd834;
+    color:  var(--verde--principal);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -40,7 +41,7 @@
 }
 .img-institucional{
     border-radius: 15px;
-    box-shadow: 4px 4px 25px #8437cc;
+    box-shadow: 4px 4px 25px var(--laranja-escuro);
     
 }
 
@@ -56,13 +57,13 @@
 
 #about-area3{
     margin-top: 5px;
-    border-bottom: 5px solid #ff7600;
+    border-bottom: 5px solid var(--laranja-escuro);
     
 }
 
 .about-title3{
     font-size: 1.6rem;
-    color:  #2bd834;
+    color:  var(--verde--principal);
     text-transform: uppercase;
     font-weight: 700;
     padding-right: 0.5rem;
@@ -72,7 +73,7 @@
 .img-institucional3{
     
     border-radius: 15px;
-    box-shadow: 4px 4px 25px #8437cc;
+    box-shadow: 4px 4px 25px var(--laranja-escuro);
     
     
 }
@@ -106,7 +107,7 @@
     margin-top: 50px;
     font-size: 3rem;
     font-weight: 700;
-    color: #59238c;
+    color: var(--laranja-escuro);
 }
  
 .apoio-content-p{
@@ -132,14 +133,7 @@
         font-size: 1.7rem;
 
      }
-     .main-title2::after{
-        content: '';
-        border-top:2px solid #ff7600;
-        width: 35%;
-        position: absolute;
-        top: 230px;
-        left: 35%;
-    }
+ 
 
     .about-title{
      margin-top: 3rem;
@@ -162,7 +156,7 @@
     .about-title3{
         padding-top: -5px;
         font-size: 1.5rem;
-        color:  #2bd834;
+        color:  var(--verde--principal);
         text-transform: uppercase;
         font-weight: 700;
         padding-right: 1rem;
@@ -170,7 +164,7 @@
     }
     .img-institucional3{    
         border-radius: 15px;
-        box-shadow: 4px 4px 25px #8437cc;
+        box-shadow: 4px 4px 25px var(--laranja-escuro);
         
     }
     
@@ -192,6 +186,6 @@
     padding-right: 4rem;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #59238c;
+    color: var(--laranja-escuro);
 }
 }

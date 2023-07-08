@@ -1,7 +1,23 @@
+
+:root{
+	--azul-principal: #00a9d4;
+	--azul-alternativo: #2b818c;
+	--magenta-principal: #c60052;
+	--magenta-alternativo: #ed2860;
+	--laranja-escuro: #ff4000;
+	--laranja-claro:#e87624;
+	--aamarelo-principal: #ffc803;
+	--verde--principal: #a7cd2c;
+  
+  }
+  
+
+
 footer {
-	background: #101010;
+	background: #f9f9f9;
 	padding: 86px 0;
-	border-top: 5px solid #ff7600;
+	border-top: 5px solid var(--laranja-escuro);
+	
 }
 
 .single-content {
@@ -9,16 +25,18 @@ footer {
 	padding: 115px 0;
 }
 .single-box p {
-	color: #fff;
+	color: #000;
+	margin-top: 40px;
+	font-weight: 500;
 	line-height: 1.5;
 }
 .single-box h3 {
 	font-size: 16px;
 	font-weight: 700;
-	color: #fff;
+	color: #000;
 }
 .single-box .card-area i {
-	color: #ffffff;
+	color: #000;
 	font-size: 20px;
 	margin-right: 10px;
 }
@@ -28,18 +46,21 @@ footer {
 }
 .single-box ul li a {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	line-height: 2.5;
-	font-weight: 100;
+	font-weight: 500;
+}
+.single-box ul li a:hover {
+	color: var(--laranja-escuro);
 }
 .single-box h2 {
-	color: #fff;
+	color: #000;
 	font-size: 20px;
 	font-weight: 700;
 }
 #basic-addon2 {
-	background: #fe1e4f;
-	color: #fff;
+	background: var(--laranja-escuro);
+	color: #000;
 }
 .socials i {
 	font-size: 18px;

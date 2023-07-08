@@ -2,7 +2,7 @@
     font-weight: 600;
     font-size: 4rem;
     text-shadow: 2px 2px 10px #363636;
-    color: #ff7600;
+    color: var(--verde--principal);
 }
 
 .text-banner{
