@@ -1,5 +1,5 @@
 var swiper = new Swiper(".slide-founder-content", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 25,
     loop: true,
     centerSlide: 'true',
@@ -25,5 +25,13 @@ var swiper = new Swiper(".slide-founder-content", {
         950: {
             slidesPerView: 3,
         },
+    },
+  });
+
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });

@@ -61,94 +61,88 @@
 </header>
 
 <!-- formulario contato -->
-<section id="body-form">
-    <div class="col-md-6 form-img" id="img-contato">
-     <img src="./assets/img/ilus.png" alt="">
+<div class="container-contato">
+    <div class="form-image">
+        <img src="./assets/img/ilus.png" alt="">
     </div>
-    <div class="col-md-6  container-form">
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Solicitar Projeto</h1>
+    <div class="form">
+        <form action="#">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Quero Solicitar Meu Projeto</h1>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                </div>
+        
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                </div>
+            </div>
+
+            <div class="col-12 input-box">
+                <label for="projectType">Tipo de Projeto:</label>
+                <select class="form-control" id="projectType" name="projectType">
+                  <option value="website">Site Institucional</option>
+                  <option value="webapp">Landing Page</option>
+                  <option value="webdesign">Loja Virtual</option>
+                  <option value="ecommerce">Página de Captura</option>
+                  <option value="ecommerce">Info-produto</option>
+                </select>
+               </div>
+
+            <div class="gender-inputs">
+                <div class="gender-title">
+                    <h6>Eu sou</h6>
+                </div>
+
+                <div class="gender-group">
+                    <div class="gender-input">
+
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Empresa Médio Porte</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Empresa Grande Porte</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="others" type="radio" name="gender">
+                        <label for="others">Pessoa Fisica</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender">
+                        <label for="none">MEI</label>
                     </div>
                 </div>
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required>
-                    </div>
-    
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
-                    </div>
-    
-                    <div class="input-box">
-                        <label for="email">Seu melhor e-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    </div>
-    
-                    <div class=" input-box">
-                        <label for="number">Celular</label>
-                        <input type="tel" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required>
-                    </div>
-                       <div class="col-12 input-box">
-                        <label for="projectType">Tipo de Projeto:</label>
-                        <select class="form-control" id="projectType" name="projectType">
-                          <option value="website">Site Institucional</option>
-                          <option value="webapp">Landing Page</option>
-                          <option value="webdesign">Loja Virtual</option>
-                          <option value="ecommerce">Manutenção de Micros</option>
-                          <option value="ecommerce">Suporte a usuários</option>
-                          <option value="ecommerce">Instalações e Configurações</option>
-                        </select>
-                       </div>
-                    
-                     
-                      
-    
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
-    
-                    <div class="input-box">
-                        <label for="confirmpassword">Confirme sua senha</label>
-                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Digite sua senha" required>
-                    </div>
-                </div>
-    
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Qual Profissional Necessita</h6>
-                    </div>
-    
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" name="gender" id="female">
-                            <label for="female">Programador Web</label>
-                        </div>
-    
-                        <div class="gender-input">
-                            <input type="radio" name="gender" id="male">
-                            <label for="male">Suporte em T.I</label>
-                        </div>
-    
-                        <div class="gender-input">
-                            <input type="radio" name="gender" id="others">
-                            <label for="others">Ambos Profissionais</label>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="continue-button">
-                    <button><a href="#">Solicitar</a></button>
-                </div>
-            </form>
-        </div>
+
+                
+            </div>
+
+            <div class="continue-button">
+                <button><a href="#">Continuar</a> </button>
+            </div>
+        </form>
     </div>
-    </section>
+</div>
 
 
     <footer>

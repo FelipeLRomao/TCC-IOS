@@ -17,7 +17,11 @@ footer {
 	background: #f9f9f9;
 	padding: 86px 0;
 	border-top: 5px solid var(--laranja-escuro);
-	
+	overflow-x: hidden;
+}
+
+.logo-footer{
+	width: 12vw;
 }
 
 .single-content {

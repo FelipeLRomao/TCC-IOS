@@ -11,8 +11,13 @@
 
 }
 
+.logo{
+  width: 9vw!important;
+}
+
 header{
     border-bottom: 5px solid var(--laranja-escuro);
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -58,6 +63,7 @@ ul li a{
 
 body{
     background-color: var(--azul-principal);
+    overflow-x: hidden;
 }
 
 
@@ -104,7 +110,7 @@ body{
 .text-principal{
     color: #fff;
     text-align: justify;
-    margin-left: -90px;
+    margin-left: -50px;
     font-weight: 400;
     font-size: 1.1rem;
     width: 100%;
@@ -140,6 +146,47 @@ body{
     height: 3rem;
 }
 
+NEWLESTTER
+
+.newsletters{
+  margin-bottom: 30px;
+  
+}
+.needs-validation{
+  display: flex;
+  padding: 20px;
+  padding-left: 150px;
+  
+}
+
+.title-newsletter{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--magenta-principal);
+
+}
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  
+}
+/* .input-group input{   
+  margin-right: 10px;
+  padding-left: 30px ;
+  width: 35px;
+} */
+
+.btn-newsletter{
+align-self: center;
+padding-bottom: 20px;
+}
+
+.form-newsletter{
+  padding-bottom: 20px;
+}
+
 /* Primeira Imagem Home conteúdo */
 
 
@@ -153,7 +200,7 @@ body{
     background-color: #f8f8f8;
     color: #000;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .text-principal2{
@@ -164,6 +211,10 @@ body{
     font-weight: 400;
     width: 100%;
     padding-right: 70px;
+}
+
+.text-principal2 h2{
+ font-size: 4rem;
 }
 
 .text-principal-form{
@@ -191,13 +242,13 @@ body{
   color: #f9f9f9;
 }
 
-.img-home2{
-    margin-left: -9rem;
+.img-home2{ 
+    width: 45vw;
 }
 
 .heading{
-    font-size: 4rem;
-    font-weight: 600;
+  font-size: 4rem;
+   font-weight: 600;
   text-align: start;
   color: var(--laranja-escuro);
 }
@@ -212,6 +263,8 @@ body{
 
 .img-home3{
    max-width: 35vw;
+   
+   
 }
 
 
@@ -380,62 +433,137 @@ body{
     height: 100%;
 }
 
-/* Seção MISSÂO VISÂO VALORES */
+/* Seção Serviços */
 
-.mvv{
-  padding: 2rem;
-  font-size: 1.1rem;
+.produtos{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.mvv-container{
-  display: flex;
-  justify-content: space-between;
-  }
+.card-body-produtos{
+  text-align: center;
+  
+}
 
-.title-mvv{
-  font-size: 2rem;
-  padding-top: 2px;
+.title-produto{
+  color: var(--magenta-principal);
+  font-weight: 700;
+}
+
+.description{
+  text-align: center;
+}
+
+.card-body-produtos a{
+  margin-bottom: 15px;
+}
+
+/* Seção Parceiros */
+.slider{
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.title-parceiros{
+  margin-top: 6rem;
+  font-size: 3rem;
   color: var(--laranja-escuro);
 }
-.mvv-row{
-  margin: 30px;
+
+.sub-title-parceiros{
+  color: var(--magenta-principal);
+  margin-bottom: 3rem;
 }
 
-.btn-mvv {
-  font-size: 1rem;
-  margin-left: 2rem;
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 2rem;
-  text-decoration: none;
-  color: #fff;
-}
-.btn-mvv:hover{
-font-size: 1rem;
-margin-left: 2rem;
-padding: 15px;
-border-radius: 10px;
-max-width: 2rem;
-text-decoration: none;
-color: #fff;
-background-color: var(--verde--principal);
+@keyframes scroll{
+  0%{
+    transform: translatex(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
-.circle-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
-.circle-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.slider .slide-mark{
+  width: 250px;
+  height: 100px;
 }
-/* Responsividade */
+.slide-mark img{
+  width: 90%;
+}
+
+
+
+/* Projetos Home */
+.product{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-img-petshop{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 35px;
+  padding: 20px;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translatex(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.card-img-petshop img{
+box-shadow: 1px 1px 10px 1px #000;
+border-radius: 15px;
+}
+
+.card-img-petshop img:hover{
+  box-shadow: 1px 1px 10px 1px var(--verde--principal);
+  }
+
+.title-project{
+  font-size: 3rem;
+  color: var(--laranja-escuro);
+}
+
+.btn-project{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.content-principal{
+  border-bottom: 5px solid var(--laranja-escuro);
+}
+/* Responsividade seção serviços */
+@media (max-width: 767px) {
+  .produtos {
+    justify-content: center;
+  }
+
+  .card-body-produtos {
+    width: 100%;
+  }
+}
 
 /* Responsividade Slider */
+
 @media screen and (max-width:368px){   
     .carousel{
         width: 100vw;
@@ -559,15 +687,18 @@ background-color: var(--verde--principal);
   /* Estilos específicos para dispositivos menores, como celulares em orientação paisagem */
 
   /* CSS para telas de 1300px */
-@media (min-width: 1300px) {
-  /* Estilos para o header */
- 
-  
-  
+
+  @media screen and (max-width: 1330px){
   .logo {
-    height: 80px;
+      width: 12vw!important;
+    }
   }
-  
+
+@media screen and (min-width: 1330px) {
+ 
+  .logo {
+    width: 15vw;
+}
   .navbar-nav {
     margin-left: auto;
   }
@@ -680,7 +811,7 @@ background-color: var(--verde--principal);
 
     .title-home {
       font-size: 1.2rem;
-      padding-left: 7rem;
+      padding-left: 5rem;
       width: 100vw;
     }
   
@@ -689,10 +820,8 @@ background-color: var(--verde--principal);
     }
     .text-integra {
       font-size: 2rem;
-      text-align: start;
-      gap: 0;
-      padding-left: 7rem;
-      width: 100vw;
+      text-align: center;
+     
     }
     .text-integra span{
         font-size: 2rem;        
@@ -700,15 +829,13 @@ background-color: var(--verde--principal);
       }
   
     .title-secondary {
-      font-size: 1.3rem;
-      text-align: start;
-      padding-left: 7rem;
-      width: 100vw;
+      font-size: 1.1rem;
+      text-align: center;
     }
   
     .text-principal p {
       font-size: 1rem;
-      padding-left: 7rem;
+      padding-right: 7rem;
       width: 100vw;
     }
   
@@ -758,7 +885,7 @@ background-color: var(--verde--principal);
       padding-left: 6rem;
     }
     .img-home3{
-        max-width: 95vw;
+        max-width: 75vw;
         padding-bottom: 2px;
         padding-top: 35px;
       }

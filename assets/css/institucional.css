@@ -51,8 +51,10 @@
 }
 
 
-.segundo-bloco{
+.segundo-bloco-institucional{
     margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #about-area3{
@@ -70,11 +72,9 @@
     
 }
 
-.img-institucional3{
-    
+.img-institucional3{    
     border-radius: 15px;
-    box-shadow: 4px 4px 25px var(--laranja-escuro);
-    
+    box-shadow: 4px 4px 25px var(--laranja-escuro); 
     
 }
 
@@ -84,9 +84,12 @@
     
 }
 
+.img-institucional-home{
+  width: 35vw;
+}
+
 #about-area3 p{
-    padding-left: -40px;
-   padding-right: 4rem;
+   padding-right:   2rem;
    margin-bottom: 50px;
   
 }
